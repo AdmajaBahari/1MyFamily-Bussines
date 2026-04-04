@@ -1,215 +1,361 @@
-
-
-<!-- Page Header -->
-<section class="hero" style="min-height: 50vh; padding: 120px 0 60px;">
-    <div class="container">
-        <div class="section-title scroll-animate" style="margin-bottom: 0;">
-            <h2 style="margin-bottom: 1rem;">Produk Kami</h2>
-            <p style="max-width: 700px; margin: 0 auto;">
-                Temukan berbagai kebutuhan menjahit berkualitas dengan harga terjangkau. Dari kain, alat jahit, hingga aksesoris lengkap tersedia di sini.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Products Section -->
-<section class="section">
-    <div class="container">
-        <!-- Filter Buttons -->
-        <div class="products-filter scroll-animate">
-            <button class="filter-btn active" data-filter="all">Semua Produk</button>
-            <button class="filter-btn" data-filter="kain">Kain & Tekstil</button>
-            <button class="filter-btn" data-filter="alat">Alat Jahit</button>
-            <button class="filter-btn" data-filter="aksesoris">Aksesoris</button>
-        </div>
-        
-        <!-- Products Grid -->
-        <div class="products-grid">
-            <!-- Kain Katun -->
-            <div class="product-card scroll-animate" data-category="kain">
-                <div class="product-image">
-                    <img src="images/product-kain-katun.jpg" alt="Kain Katun">
-                    <span class="product-category">Kain</span>
-                </div>
-                <div class="product-info">
-                    <h3>Kain Katun Premium</h3>
-                    <p>Kain katun berkualitas tinggi dengan tekstur lembut, nyaman dipakai, dan mudah dijahit. Tersedia dalam berbagai warna.</p>
-                    <span class="product-price">Rp 25.000 - 45.000/m</span>
-                </div>
-            </div>
-            
-            <!-- Kain Batik -->
-            <div class="product-card scroll-animate" data-category="kain">
-                <div class="product-image">
-                    <img src="images/product-batik.jpg" alt="Kain Batik">
-                    <span class="product-category">Kain</span>
-                </div>
-                <div class="product-info">
-                    <h3>Kain Batik Tradisional & Modern</h3>
-                    <p>Koleksi batik dengan motif eksklusif dari berbagai daerah di Indonesia. Cocok untuk pakaian formal dan kasual.</p>
-                    <span class="product-price">Rp 75.000 - 250.000/m</span>
-                </div>
-            </div>
-            
-            <!-- Mesin Jahit -->
-            <div class="product-card scroll-animate" data-category="alat">
-                <div class="product-image">
-                    <img src="images/product-mesin-jahit.jpg" alt="Mesin Jahit">
-                    <span class="product-category">Alat</span>
-                </div>
-                <div class="product-info">
-                    <h3>Mesin Jahit Portable & Industri</h3>
-                    <p>Mesin jahit dari merek terpercaya dengan garansi resmi. Tersedia untuk kebutuhan rumahan hingga industri.</p>
-                    <span class="product-price">Rp 1.500.000 - 8.000.000</span>
-                </div>
-            </div>
-            
-            <!-- Benang -->
-            <div class="product-card scroll-animate" data-category="aksesoris">
-                <div class="product-image">
-                    <img src="images/product-benang.jpg" alt="Benang Jahit">
-                    <span class="product-category">Aksesoris</span>
-                </div>
-                <div class="product-info">
-                    <h3>Benang Jahit Premium</h3>
-                    <p>Benang berkualitas tinggi dalam berbagai warna dan ketebalan. Kuat, tidak mudah putus, dan hasil jahitan rapi.</p>
-                    <span class="product-price">Rp 5.000 - 25.000/gulung</span>
-                </div>
-            </div>
-            
-            <!-- Gunting -->
-            <div class="product-card scroll-animate" data-category="alat">
-                <div class="product-image">
-                    <img src="images/product-gunting.jpg" alt="Gunting dan Alat Potong">
-                    <span class="product-category">Alat</span>
-                </div>
-                <div class="product-info">
-                    <h3>Gunting & Alat Potong Profesional</h3>
-                    <p>Gunting tailor berkualitas, rotary cutter, cutting mat, dan alat pemotong kain lainnya.</p>
-                    <span class="product-price">Rp 35.000 - 350.000</span>
-                </div>
-            </div>
-            
-            <!-- Aksesoris -->
-            <div class="product-card scroll-animate" data-category="aksesoris">
-                <div class="product-image">
-                    <img src="images/product-aksesoris.jpg" alt="Aksesoris Jahit">
-                    <span class="product-category">Aksesoris</span>
-                </div>
-                <div class="product-info">
-                    <h3>Aksesoris Jahit Lengkap</h3>
-                    <p>Kancing, resleting, pita, renda, payet, dan berbagai aksesoris untuk melengkapi karya Anda.</p>
-                    <span class="product-price">Rp 2.000 - 50.000</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Additional Products Info -->
-        <div class="section-alt" style="margin-top: 4rem; padding: 3rem; border-radius: var(--radius-lg);">
-            <div class="section-title scroll-animate" style="margin-bottom: 2rem;">
-                <h3>Produk Lainnya yang Tersedia</h3>
-            </div>
-            <div class="features" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-                <div class="feature-card scroll-animate" style="padding: 1.5rem;">
-                    <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
-                        <i class="fas fa-tshirt"></i>
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produk Toko Kain dan Alat Jahit Hasanah - Kain berkualitas, alat jahit, dan aksesoris lengkap di Sragen.">
+    <title>Produk Kami - TOKO HASANAH</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">H</div>
+                    <div class="logo-text">
+                        TOKO HASANAH
+                        <span>KAIN & ALAT JAHIT</span>
                     </div>
-                    <h4 style="font-size: 1rem;">Kain Rayon</h4>
-                    <p style="font-size: 0.875rem;">Lembut dan jatuh, cocok untuk pakaian santai</p>
-                </div>
-                <div class="feature-card scroll-animate" style="padding: 1.5rem;">
-                    <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
-                        <i class="fas fa-couch"></i>
-                    </div>
-                    <h4 style="font-size: 1rem;">Kain Blacu</h4>
-                    <p style="font-size: 0.875rem;">Untuk tas, dompet, dan kerajinan tangan</p>
-                </div>
-                <div class="feature-card scroll-animate" style="padding: 1.5rem;">
-                    <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                    <h4 style="font-size: 1rem;">Kain Sifon</h4>
-                    <p style="font-size: 0.875rem;">Elegan dan ringan untuk pakaian pesta</p>
-                </div>
-                <div class="feature-card scroll-animate" style="padding: 1.5rem;">
-                    <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
-                        <i class="fas fa-ruler"></i>
-                    </div>
-                    <h4 style="font-size: 1rem;">Alat Ukur</h4>
-                    <p style="font-size: 0.875rem;">Meteran, penggaris, dan pattern paper</p>
-                </div>
-                <div class="feature-card scroll-animate" style="padding: 1.5rem;">
-                    <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
-                        <i class="fas fa-thumbtack"></i>
-                    </div>
-                    <h4 style="font-size: 1rem;">Jarum & Peniti</h4>
-                    <p style="font-size: 0.875rem;">Berbagai ukuran untuk kebutuhan berbeda</p>
-                </div>
-                <div class="feature-card scroll-animate" style="padding: 1.5rem;">
-                    <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h4 style="font-size: 1rem;">Cat Kain</h4>
-                    <p style="font-size: 0.875rem;">Untuk mendekorasi dan memperindah karya</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- How to Order Section -->
-<section class="section section-alt">
-    <div class="container">
-        <div class="section-title scroll-animate">
-            <h2>Cara Pemesanan</h2>
-            <p>Pilih cara yang paling nyaman untuk Anda berbelanja di toko kami</p>
-        </div>
-        <div class="features">
-            <div class="feature-card scroll-animate">
-                <div class="feature-icon">
-                    <i class="fas fa-store"></i>
-                </div>
-                <h3>Kunjungi Toko</h3>
-                <p>Datang langsung ke toko kami untuk melihat dan memilih produk secara langsung</p>
-            </div>
-            <div class="feature-card scroll-animate">
-                <div class="feature-icon">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <h3>Chat WhatsApp</h3>
-                <p>Kirim pesan via WhatsApp untuk konsultasi dan pemesanan produk</p>
-            </div>
-            <div class="feature-card scroll-animate">
-                <div class="feature-icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <h3>Telepon</h3>
-                <p>Hubungi kami langsung untuk informasi stok dan harga terkini</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="container">
-        <div class="cta-container">
-            <div class="cta-content">
-                <h2>Tidak Menemukan yang Anda Cari?</h2>
-                <p>Hubungi kami untuk menanyakan ketersediaan produk atau request produk khusus</p>
-            </div>
-            <div class="cta-buttons">
-                <a href="https://wa.me/6281218248892?text=Halo%20Toko%20Hasanah,%20saya%20ingin%20menanyakan%20produk%20" target="_blank" class="btn btn-whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    Tanya Produk
                 </a>
-                <a href="tel:081218248892" class="btn btn-outline">
-                    <i class="fas fa-phone"></i>
-                    Telepon Kami
-                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="tentang-kami.html" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="produk.html" class="nav-link active">Produk</a></li>
+                    <li><a href="lokasi.html" class="nav-link">Lokasi</a></li>
+                    <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+                    <li>
+                        <div class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+                            <div class="toggle-slider">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero page-header">
+        <div class="container">
+            <div class="page-header-content scroll-animate">
+                <h2>Produk Kami</h2>
+                <p>
+                    Temukan berbagai kebutuhan menjahit berkualitas dengan harga terjangkau. Dari kain, alat jahit, hingga aksesoris lengkap tersedia di sini.
+                </p>
             </div>
         </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="products-filter scroll-animate">
+                <button class="filter-btn active" data-filter="all">Semua Produk</button>
+                <button class="filter-btn" data-filter="kain">Kain & Tekstil</button>
+                <button class="filter-btn" data-filter="alat">Alat Jahit</button>
+                <button class="filter-btn" data-filter="aksesoris">Aksesoris</button>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Kain Katun -->
+                <div class="product-card scroll-animate" data-category="kain">
+                    <div class="product-image">
+                        <img src="images/product-kain-katun.jpg" alt="Kain Katun" loading="lazy">
+                        <span class="product-category">Kain</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kain Katun Premium</h3>
+                        <p>Kain katun berkualitas tinggi dengan tekstur lembut, nyaman dipakai, dan mudah dijahit. Tersedia dalam berbagai warna.</p>
+                        <span class="product-price">Rp 25.000 - 45.000/m</span>
+                    </div>
+                </div>
+                
+                <!-- Kain Batik -->
+                <div class="product-card scroll-animate" data-category="kain">
+                    <div class="product-image">
+                        <img src="images/product-batik.jpg" alt="Kain Batik" loading="lazy">
+                        <span class="product-category">Kain</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kain Batik Tradisional & Modern</h3>
+                        <p>Koleksi batik dengan motif eksklusif dari berbagai daerah di Indonesia. Cocok untuk pakaian formal dan kasual.</p>
+                        <span class="product-price">Rp 75.000 - 250.000/m</span>
+                    </div>
+                </div>
+                
+                <!-- Mesin Jahit -->
+                <div class="product-card scroll-animate" data-category="alat">
+                    <div class="product-image">
+                        <img src="images/product-mesin-jahit.jpg" alt="Mesin Jahit" loading="lazy">
+                        <span class="product-category">Alat</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mesin Jahit Portable & Industri</h3>
+                        <p>Mesin jahit dari merek terpercaya dengan garansi resmi. Tersedia untuk kebutuhan rumahan hingga industri.</p>
+                        <span class="product-price">Rp 1.500.000 - 8.000.000</span>
+                    </div>
+                </div>
+                
+                <!-- Benang -->
+                <div class="product-card scroll-animate" data-category="aksesoris">
+                    <div class="product-image">
+                        <img src="images/product-benang.jpg" alt="Benang Jahit" loading="lazy">
+                        <span class="product-category">Aksesoris</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Benang Jahit Premium</h3>
+                        <p>Benang berkualitas tinggi dalam berbagai warna dan ketebalan. Kuat, tidak mudah putus, dan hasil jahitan rapi.</p>
+                        <span class="product-price">Rp 5.000 - 25.000/gulung</span>
+                    </div>
+                </div>
+                
+                <!-- Gunting -->
+                <div class="product-card scroll-animate" data-category="alat">
+                    <div class="product-image">
+                        <img src="images/product-gunting.jpg" alt="Gunting dan Alat Potong" loading="lazy">
+                        <span class="product-category">Alat</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gunting & Alat Potong Profesional</h3>
+                        <p>Gunting tailor berkualitas, rotary cutter, cutting mat, dan alat pemotong kain lainnya.</p>
+                        <span class="product-price">Rp 35.000 - 350.000</span>
+                    </div>
+                </div>
+                
+                <!-- Aksesoris -->
+                <div class="product-card scroll-animate" data-category="aksesoris">
+                    <div class="product-image">
+                        <img src="images/product-aksesoris.jpg" alt="Aksesoris Jahit" loading="lazy">
+                        <span class="product-category">Aksesoris</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Aksesoris Jahit Lengkap</h3>
+                        <p>Kancing, resleting, pita, renda, payet, dan berbagai aksesoris untuk melengkapi karya Anda.</p>
+                        <span class="product-price">Rp 2.000 - 50.000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Products Info -->
+            <div class="section-alt" style="margin-top: 4rem; padding: 3rem; border-radius: var(--radius-lg);">
+                <div class="section-title scroll-animate" style="margin-bottom: 2rem;">
+                    <h3>Produk Lainnya yang Tersedia</h3>
+                    <p>Berbagai pilihan produk tambahan untuk melengkapi kebutuhan menjahit Anda</p>
+                </div>
+                <div class="features" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                    <div class="feature-card scroll-animate" style="padding: 1.5rem;">
+                        <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4 style="font-size: 1rem;">Kain Rayon</h4>
+                        <p style="font-size: 0.875rem;">Lembut dan jatuh, cocok untuk pakaian santai</p>
+                    </div>
+                    <div class="feature-card scroll-animate" style="padding: 1.5rem;">
+                        <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h4 style="font-size: 1rem;">Kain Blacu</h4>
+                        <p style="font-size: 0.875rem;">Untuk tas, dompet, dan kerajinan tangan</p>
+                    </div>
+                    <div class="feature-card scroll-animate" style="padding: 1.5rem;">
+                        <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h4 style="font-size: 1rem;">Kain Sifon</h4>
+                        <p style="font-size: 0.875rem;">Elegan dan ringan untuk pakaian pesta</p>
+                    </div>
+                    <div class="feature-card scroll-animate" style="padding: 1.5rem;">
+                        <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="fas fa-ruler"></i>
+                        </div>
+                        <h4 style="font-size: 1rem;">Alat Ukur</h4>
+                        <p style="font-size: 0.875rem;">Meteran, penggaris, dan pattern paper</p>
+                    </div>
+                    <div class="feature-card scroll-animate" style="padding: 1.5rem;">
+                        <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="fas fa-thumbtack"></i>
+                        </div>
+                        <h4 style="font-size: 1rem;">Jarum & Peniti</h4>
+                        <p style="font-size: 0.875rem;">Berbagai ukuran untuk kebutuhan berbeda</p>
+                    </div>
+                    <div class="feature-card scroll-animate" style="padding: 1.5rem;">
+                        <div class="feature-icon" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4 style="font-size: 1rem;">Cat Kain</h4>
+                        <p style="font-size: 0.875rem;">Untuk mendekorasi dan memperindah karya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-title scroll-animate">
+                <h2>Cara Pemesanan</h2>
+                <p>Pilih cara yang paling nyaman untuk Anda berbelanja di toko kami</p>
+            </div>
+            <div class="features">
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Kunjungi Toko</h3>
+                    <p>Datang langsung ke toko kami untuk melihat dan memilih produk secara langsung</p>
+                </div>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Chat WhatsApp</h3>
+                    <p>Kirim pesan via WhatsApp untuk konsultasi dan pemesanan produk</p>
+                </div>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telepon</h3>
+                    <p>Hubungi kami langsung untuk informasi stok dan harga terkini</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2>Tidak Menemukan yang Anda Cari?</h2>
+                    <p>Hubungi kami untuk menanyakan ketersediaan produk atau request produk khusus</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/6281218248892?text=Halo%20Toko%20Hasanah,%20saya%20ingin%20menanyakan%20produk%20" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        Tanya Produk
+                    </a>
+                    <a href="tel:081218248892" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        Telepon Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">H</div>
+                        <div class="logo-text">
+                            TOKO HASANAH
+                            <span>KAIN & ALAT JAHIT</span>
+                        </div>
+                    </a>
+                    <p>Toko kain dan alat jahit terlengkap di Sragen. Menyediakan berbagai kebutuhan menjahit dengan kualitas terbaik dan harga terjangkau.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Menu Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="lokasi.html">Lokasi</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Kategori Produk</h4>
+                    <ul class="footer-links">
+                        <li><a href="produk.html">Kain & Tekstil</a></li>
+                        <li><a href="produk.html">Alat Jahit</a></li>
+                        <li><a href="produk.html">Aksesoris</a></li>
+                        <li><a href="produk.html">Benang</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Hubungi Kami</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Guworejo, Karangmalang, Sragen Regency, Central Java, Indonesia</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>0812-1824-8892</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Buka Setiap Hari<br>Buka Pukul 7:30 - 15:30</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; TOKO KAIN DAN ALAT JAHIT HASANAH. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/6281218248892?text=Halo%20Toko%20Hasanah,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat WhatsApp</span>
+        </a>
     </div>
-</section>
-
-
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

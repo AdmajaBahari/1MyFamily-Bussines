@@ -98,7 +98,7 @@ Warna tema dapat diubah di file `css/style.css` pada bagian `:root`:
 
 ## Lisensi
 
-© 2024 TOKO KAIN DAN ALAT JAHIT HASANAH. All Rights Reserved.
+© TOKO KAIN DAN ALAT JAHIT HASANAH. All Rights Reserved.
 
 ---
 

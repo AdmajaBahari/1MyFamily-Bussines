@@ -10,7 +10,38 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimations();
     initSmoothScroll();
     initProductFilter();
+    initDarkMode();
+    initCounterAnimations();
+    initLazyLoading();
 });
+
+/**
+ * Dark Mode Toggle
+ */
+function initDarkMode() {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or default to 'light'
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', currentTheme);
+    
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', function() {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Add animation class
+            darkModeToggle.classList.add('animating');
+            setTimeout(() => {
+                darkModeToggle.classList.remove('animating');
+            }, 300);
+        });
+    }
+}
 
 /**
  * Mobile Navigation Toggle
@@ -79,11 +110,12 @@ function initScrollAnimations() {
     };
     
     const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                // Optionally unobserve after animation
-                // observer.unobserve(entry.target);
+                // Add stagger delay for multiple elements
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 100);
             }
         });
     }, observerOptions);
@@ -141,13 +173,16 @@ function initProductFilter() {
             
             const filter = this.getAttribute('data-filter');
             
-            // Filter products
-            productCards.forEach(card => {
+            // Filter products with animation
+            productCards.forEach((card, index) => {
                 const category = card.getAttribute('data-category');
                 
                 if (filter === 'all' || category === filter) {
                     card.style.display = 'block';
-                    card.style.animation = 'fadeInUp 0.5s ease forwards';
+                    card.style.animation = 'none';
+                    setTimeout(() => {
+                        card.style.animation = `fadeInUp 0.5s ease ${index * 0.05}s forwards`;
+                    }, 10);
                 } else {
                     card.style.display = 'none';
                 }
@@ -241,8 +276,10 @@ function validateForm(form) {
         if (!input.value.trim()) {
             isValid = false;
             input.classList.add('error');
+            input.style.borderColor = '#dc3545';
         } else {
             input.classList.remove('error');
+            input.style.borderColor = '';
         }
     });
     
@@ -253,6 +290,10 @@ function validateForm(form) {
  * Show notification/toast
  */
 function showNotification(message, type = 'success') {
+    // Remove existing notifications
+    const existingNotifications = document.querySelectorAll('.notification');
+    existingNotifications.forEach(n => n.remove());
+    
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.innerHTML = `
@@ -260,16 +301,34 @@ function showNotification(message, type = 'success') {
         <span>${message}</span>
     `;
     
+    // Add styles
+    notification.style.cssText = `
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background: ${type === 'success' ? 'var(--color-primary)' : '#dc3545'};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-strong);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        z-index: 10000;
+        transform: translateX(150%);
+        transition: transform 0.3s ease;
+    `;
+    
     document.body.appendChild(notification);
     
     // Animate in
     setTimeout(() => {
-        notification.classList.add('show');
+        notification.style.transform = 'translateX(0)';
     }, 10);
     
     // Remove after 3 seconds
     setTimeout(() => {
-        notification.classList.remove('show');
+        notification.style.transform = 'translateX(150%)';
         setTimeout(() => {
             notification.remove();
         }, 300);
@@ -305,12 +364,6 @@ function throttle(func, limit) {
     };
 }
 
-// Initialize counter animations and lazy loading
-document.addEventListener('DOMContentLoaded', function() {
-    initCounterAnimations();
-    initLazyLoading();
-});
-
 // Back to top functionality
 window.addEventListener('scroll', throttle(function() {
     const backToTop = document.getElementById('backToTop');
@@ -322,3 +375,42 @@ window.addEventListener('scroll', throttle(function() {
         }
     }
 }, 100));
+
+// Add parallax effect to hero section
+window.addEventListener('scroll', throttle(function() {
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        const scrolled = window.pageYOffset;
+        const parallaxElements = hero.querySelectorAll('::before, ::after');
+        hero.style.backgroundPositionY = scrolled * 0.5 + 'px';
+    }
+}, 50));
+
+// Handle form submissions
+document.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('form');
+    
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            if (!validateForm(form)) {
+                e.preventDefault();
+                showNotification('Mohon lengkapi semua field yang wajib diisi.', 'error');
+            }
+        });
+    });
+});
+
+// Add hover effects to cards
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.product-card, .feature-card, .testimonial-card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+});

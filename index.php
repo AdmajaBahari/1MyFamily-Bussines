@@ -339,7 +339,7 @@ include 'includes/header.php';
             </div>
             <div class="contact-map scroll-animate">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.788503674058!2d111.0167!3d-7.4167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjUnMDAuMCJTIDExMcKwMDEnMDAuMCJF!5e0!3m2!1sen!2sid!4v1609459200000!5m2!1sen!2sid" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.788503674058!2d110.9973105!3d-7.4431884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1ca9bff1cd7f%3A0xcba7f2d09bc4047c!2shasanah!5e0!3m2!1sen!2sid!4v1744000000000!5m2!1sen!2sid" 
                     allowfullscreen="" 
                     loading="lazy"
                     title="Lokasi Toko Kain Hasanah">
