@@ -1,0 +1,223 @@
+<?php
+$pageTitle = 'Lokasi';
+$activePage = 'location';
+include 'includes/header.php';
+?>
+
+<!-- Page Header -->
+<section class="hero" style="min-height: 50vh; padding: 120px 0 60px;">
+    <div class="container">
+        <div class="section-title scroll-animate" style="margin-bottom: 0;">
+            <h2 style="margin-bottom: 1rem;">Lokasi Toko</h2>
+            <p style="max-width: 700px; margin: 0 auto;">
+                Kunjungi toko kami di Guworejo, Karangmalang, Sragen. Mudah dijangkau dengan area parkir yang memadai.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Location Details Section -->
+<section class="section">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-info scroll-animate">
+                <h2>Informasi Lokasi</h2>
+                <p>
+                    Toko kami berlokasi strategis di Guworejo, Karangmalang, Sragen. Mudah dijangkau dari berbagai arah dengan area parkir yang memadai untuk kendaraan roda dua maupun roda empat.
+                </p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Alamat Lengkap</h4>
+                            <p>Hasanah, Guworejo, Karangmalang, Sragen Regency, Central Java, Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telepon / WhatsApp</h4>
+                            <p>0812-1824-8892</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Jam Operasional</h4>
+                            <p>Buka Setiap Hari<br>Buka Pukul 7:30 - 15:30</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-parking"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Area Parkir</h4>
+                            <p>Tersedia area parkir untuk roda 2 dan 4</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem;">
+                    <a href="https://maps.app.goo.gl/Nd4roUQBHvaGSS5K6" target="_blank" class="btn btn-primary" style="margin-right: 1rem; margin-bottom: 0.5rem;">
+                        <i class="fas fa-directions"></i>
+                        Buka di Google Maps
+                    </a>
+                    <a href="https://wa.me/6281218248892?text=Halo%20Toko%20Hasanah,%20saya%20ingin%20bertanya%20tentang%20lokasi%20toko" target="_blank" class="btn btn-whatsapp" style="margin-bottom: 0.5rem;">
+                        <i class="fab fa-whatsapp"></i>
+                        Tanya Lokasi
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-map scroll-animate" style="min-height: 500px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.788503674058!2d111.0167!3d-7.4167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjUnMDAuMCJTIDExMcKwMDEnMDAuMCJF!5e0!3m2!1sen!2sid!4v1609459200000!5m2!1sen!2sid" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Lokasi Toko Kain Hasanah">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Directions Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-title scroll-animate">
+            <h2>Petunjuk Arah</h2>
+            <p>Berbagai cara untuk mencapai toko kami dari arah yang berbeda</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card scroll-animate">
+                <div class="feature-icon">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <h3>Dari Pusat Kota Sragen</h3>
+                <p>- Mulai dari SPBU Sine: Keluar dari area SPBU dan ambil arah Timur menuju Jl. Raya Solo - Ngawi / Jl. Sukowati.</p>
+                <p></p>- Lurus di Jl. Sukowati (±1 km): Terus ikuti jalan utama ini melewati pusat kota/pertokoan.
+                <p></p>- Belok Kanan ke Jl. Gambiran (±100 m): Setelah menempuh sekitar 1 km, cari persimpangan menuju Jl. Gambiran dan belok kanan.      
+                <p>- Ikuti Jl. Gambiran (±700 m): Tetap di jalan ini hingga Anda sampai di lokasi hasanah yang berada di sebelah kiri atau kanan jalan sesuai titik koordinatnya.</p>
+            </div>
+            
+
+        </div>
+    </div>
+</section>
+
+<!-- Landmarks Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-title scroll-animate">
+            <h2>Patokan Lokasi</h2>
+            <p>Temukan toko kami dengan mudah menggunakan patokan-patokan berikut</p>
+        </div>
+        
+        <div class="features" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="feature-card scroll-animate" style="text-align: left;">
+                <div class="feature-icon" style="margin: 0 0 1rem 0;">
+                    <i class="fas fa-store-alt"></i>
+                </div>
+                 <h3>Dekat SMP 2 Karangmalang</h3>
+                <p style="margin-bottom: 0;">Toko kami berada di samping SMPN 2 Karangmalang</p>
+            </div>
+            
+            <div class="feature-card scroll-animate" style="text-align: left;">
+                <div class="feature-icon" style="margin: 0 0 1rem 0;">
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <h3>Dekat SD/SMP/SMA Al-Azhar Sragen</h3>
+                <p style="margin-bottom: 0">Hanya 800M dari Al-Azhar Sragen</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Operating Hours Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-title scroll-animate">
+            <h2>Jam Operasional</h2>
+            <p>Kami buka setiap hari untuk melayani kebutuhan menjahit Anda</p>
+        </div>
+        
+        <div class="features" style="max-width: 600px; margin: 0 auto;">
+            <div class="feature-card scroll-animate" style="text-align: left;">
+                <div class="feature-icon" style="margin: 0 0 1rem 0;">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Jadwal Buka</h3>
+                <div class="hours-list" style="margin-top: 1.5rem;">
+                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
+                        <span>Senin</span>
+                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
+                    </div>
+                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
+                        <span>Selasa</span>
+                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
+                    </div>
+                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
+                        <span>Rabu</span>
+                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
+                    </div>
+                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
+                        <span>Kamis</span>
+                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
+                    </div>
+                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
+                        <span>Jumat</span>
+                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
+                    </div>
+                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
+                        <span>Sabtu</span>
+                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
+                    </div>
+                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0;">
+                        <span>Minggu</span>
+                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
+                    </div>
+                </div>
+                <p style="margin-top: 1.5rem; margin-bottom: 0; font-size: 0.875rem; color: var(--color-text-light);">
+                    <i class="fas fa-info-circle" style="margin-right: 0.5rem;"></i>
+                    Jam buka dapat berubah pada hari libur nasional
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>Siap Berkunjung?</h2>
+                <p>Kami tunggu kedatangan Anda di toko kami. Hubungi kami jika Anda membutuhkan bantuan untuk menemukan lokasi kami.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="https://wa.me/6281218248892?text=Halo%20Toko%20Hasanah,%20saya%20ingin%20bertanya%20tentang%20lokasi%20toko" target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Tanya Lokasi
+                </a>
+                <a href="tel:081218248892" class="btn btn-outline">
+                    <i class="fas fa-phone"></i>
+                    Telepon Kami
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php include 'includes/footer.php'; ?>
