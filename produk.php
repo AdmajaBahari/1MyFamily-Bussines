@@ -1,25 +1,22 @@
 <?php
-$pageTitle = 'Produk Kami';
-$activePage = 'products';
+$pageTitle = 'Produk Kami - TOKO HASANAH';
+$activePage = 'produk';
 include 'includes/header.php';
 ?>
 
-<!-- Page Header -->
-<section class="hero" style="min-height: 50vh; padding: 120px 0 60px;">
+<section class="hero page-header">
     <div class="container">
-        <div class="section-title scroll-animate" style="margin-bottom: 0;">
-            <h2 style="margin-bottom: 1rem;">Produk Kami</h2>
-            <p style="max-width: 700px; margin: 0 auto;">
+        <div class="page-header-content scroll-animate">
+            <h2>Produk Kami</h2>
+            <p>
                 Temukan berbagai kebutuhan menjahit berkualitas dengan harga terjangkau. Dari kain, alat jahit, hingga aksesoris lengkap tersedia di sini.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Products Section -->
 <section class="section">
     <div class="container">
-        <!-- Filter Buttons -->
         <div class="products-filter scroll-animate">
             <button class="filter-btn active" data-filter="all">Semua Produk</button>
             <button class="filter-btn" data-filter="kain">Kain & Tekstil</button>
@@ -27,91 +24,72 @@ include 'includes/header.php';
             <button class="filter-btn" data-filter="aksesoris">Aksesoris</button>
         </div>
         
-        <!-- Products Grid -->
         <div class="products-grid">
-            <!-- Kain Katun -->
             <div class="product-card scroll-animate" data-category="kain">
                 <div class="product-image">
-                    <img src="images/product-kain-katun.jpg" alt="Kain Katun">
+                    <img src="images/product-kain-katun.jpg" alt="Kain Katun" loading="lazy">
                     <span class="product-category">Kain</span>
                 </div>
                 <div class="product-info">
-                    <h3>Kain Katun Premium</h3>
-                    <p>Kain katun berkualitas tinggi dengan tekstur lembut, nyaman dipakai, dan mudah dijahit. Tersedia dalam berbagai warna.</p>
-                    <span class="product-price">Rp 25.000 - 45.000/m</span>
+                    <h3>Kain</h3>
+                    <p>Kain berkualitas tinggi dengan tekstur lembut, nyaman dipakai, dan mudah dijahit. Tersedia dalam berbagai warna.</p>
+                    <span class="product-price">Mulai Rp 12.000/m</span>
                 </div>
             </div>
             
-            <!-- Kain Batik -->
             <div class="product-card scroll-animate" data-category="kain">
                 <div class="product-image">
-                    <img src="images/product-batik.jpg" alt="Kain Batik">
+                    <img src="images/product-batik.jpg" alt="Kain Batik" loading="lazy">
                     <span class="product-category">Kain</span>
                 </div>
                 <div class="product-info">
                     <h3>Kain Batik Tradisional & Modern</h3>
                     <p>Koleksi batik dengan motif eksklusif dari berbagai daerah di Indonesia. Cocok untuk pakaian formal dan kasual.</p>
-                    <span class="product-price">Rp 75.000 - 250.000/m</span>
+                    <span class="product-price">Mulai Rp 12.000/m</span>
                 </div>
             </div>
             
-            <!-- Mesin Jahit -->
-            <div class="product-card scroll-animate" data-category="alat">
-                <div class="product-image">
-                    <img src="images/product-mesin-jahit.jpg" alt="Mesin Jahit">
-                    <span class="product-category">Alat</span>
-                </div>
-                <div class="product-info">
-                    <h3>Mesin Jahit Portable & Industri</h3>
-                    <p>Mesin jahit dari merek terpercaya dengan garansi resmi. Tersedia untuk kebutuhan rumahan hingga industri.</p>
-                    <span class="product-price">Rp 1.500.000 - 8.000.000</span>
-                </div>
-            </div>
-            
-            <!-- Benang -->
             <div class="product-card scroll-animate" data-category="aksesoris">
                 <div class="product-image">
-                    <img src="images/product-benang.jpg" alt="Benang Jahit">
+                    <img src="images/product-benang.jpg" alt="Benang Jahit" loading="lazy">
                     <span class="product-category">Aksesoris</span>
                 </div>
                 <div class="product-info">
                     <h3>Benang Jahit Premium</h3>
                     <p>Benang berkualitas tinggi dalam berbagai warna dan ketebalan. Kuat, tidak mudah putus, dan hasil jahitan rapi.</p>
-                    <span class="product-price">Rp 5.000 - 25.000/gulung</span>
+                    <span class="product-price">Rp 3.000/gulung</span>
                 </div>
             </div>
             
-            <!-- Gunting -->
             <div class="product-card scroll-animate" data-category="alat">
                 <div class="product-image">
-                    <img src="images/product-gunting.jpg" alt="Gunting dan Alat Potong">
+                    <img src="images/product-gunting.jpg" alt="Gunting dan Alat Potong" loading="lazy">
                     <span class="product-category">Alat</span>
                 </div>
                 <div class="product-info">
                     <h3>Gunting & Alat Potong Profesional</h3>
                     <p>Gunting tailor berkualitas, rotary cutter, cutting mat, dan alat pemotong kain lainnya.</p>
-                    <span class="product-price">Rp 35.000 - 350.000</span>
+                    <span class="product-price">Rp 8.000</span>
                 </div>
             </div>
             
-            <!-- Aksesoris -->
             <div class="product-card scroll-animate" data-category="aksesoris">
                 <div class="product-image">
-                    <img src="images/product-aksesoris.jpg" alt="Aksesoris Jahit">
+                    <img src="images/product-aksesoris.jpg" alt="Aksesoris Jahit" loading="lazy">
                     <span class="product-category">Aksesoris</span>
                 </div>
                 <div class="product-info">
                     <h3>Aksesoris Jahit Lengkap</h3>
                     <p>Kancing, resleting, pita, renda, payet, dan berbagai aksesoris untuk melengkapi karya Anda.</p>
-                    <span class="product-price">Rp 2.000 - 50.000</span>
+                    <span class="product-price">Rp 1.000</span>
                 </div>
             </div>
         </div>
         
-        <!-- Additional Products Info -->
         <div class="section-alt" style="margin-top: 4rem; padding: 3rem; border-radius: var(--radius-lg);">
             <div class="section-title scroll-animate" style="margin-bottom: 2rem;">
                 <h3>Produk Lainnya yang Tersedia</h3>
+                <p>Berbagai pilihan produk tambahan untuk melengkapi kebutuhan menjahit Anda</p>
             </div>
             <div class="features" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
                 <div class="feature-card scroll-animate" style="padding: 1.5rem;">
@@ -161,7 +139,6 @@ include 'includes/header.php';
     </div>
 </section>
 
-<!-- How to Order Section -->
 <section class="section section-alt">
     <div class="container">
         <div class="section-title scroll-animate">
@@ -194,7 +171,6 @@ include 'includes/header.php';
     </div>
 </section>
 
-<!-- CTA Section -->
 <section class="cta-section">
     <div class="container">
         <div class="cta-container">

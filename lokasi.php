@@ -1,29 +1,27 @@
 <?php
-$pageTitle = 'Lokasi';
-$activePage = 'location';
+$pageTitle = 'Lokasi Toko - TOKO HASANAH';
+$activePage = 'lokasi';
 include 'includes/header.php';
 ?>
 
-<!-- Page Header -->
-<section class="hero" style="min-height: 50vh; padding: 120px 0 60px;">
+<section class="hero page-header">
     <div class="container">
-        <div class="section-title scroll-animate" style="margin-bottom: 0;">
-            <h2 style="margin-bottom: 1rem;">Lokasi Toko</h2>
-            <p style="max-width: 700px; margin: 0 auto;">
-                Kunjungi toko kami di Guworejo, Karangmalang, Sragen. Mudah dijangkau dengan area parkir yang memadai.
+        <div class="page-header-content scroll-animate">
+            <h2>Lokasi Toko</h2>
+            <p>
+                Kunjungi toko kami di Turi Lor, Sine Sragen. Mudah dijangkau dengan area parkir yang memadai.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Location Details Section -->
 <section class="section">
     <div class="container">
         <div class="contact-container">
             <div class="contact-info scroll-animate">
                 <h2>Informasi Lokasi</h2>
                 <p>
-                    Toko kami berlokasi strategis di Guworejo, Karangmalang, Sragen. Mudah dijangkau dari berbagai arah dengan area parkir yang memadai untuk kendaraan roda dua maupun roda empat.
+                    Toko kami berlokasi strategis di Turi Lor, Sine Sragen. Mudah dijangkau dari berbagai arah dengan area parkir yang memadai untuk kendaraan roda dua maupun roda empat.
                 </p>
                 
                 <div class="contact-details">
@@ -33,7 +31,7 @@ include 'includes/header.php';
                         </div>
                         <div class="contact-text">
                             <h4>Alamat Lengkap</h4>
-                            <p>Hasanah, Guworejo, Karangmalang, Sragen Regency, Central Java, Indonesia</p>
+                            <p>Turi Lor, Sine Sragen Regency, Central Java, Indonesia</p>
                         </div>
                     </div>
                     
@@ -53,7 +51,7 @@ include 'includes/header.php';
                         </div>
                         <div class="contact-text">
                             <h4>Jam Operasional</h4>
-                            <p>Buka Setiap Hari<br>Buka Pukul 7:30 - 15:30</p>
+                            <p>Buka Setiap Hari<br>07:30 - 15:30</p>
                         </div>
                     </div>
                     
@@ -69,7 +67,7 @@ include 'includes/header.php';
                 </div>
                 
                 <div style="margin-top: 2rem;">
-                        <a href="https://maps.app.goo.gl/wn2vNtDhDGiUVAM47" target="_blank" class="btn btn-primary" style="margin-right: 1rem; margin-bottom: 0.5rem;">
+                    <a href="https://maps.google.com/?q=Toko+Hasanah+Kain+Alat+Jahit+Sragen" target="_blank" class="btn btn-primary" style="margin-right: 1rem; margin-bottom: 0.5rem;">
                         <i class="fas fa-directions"></i>
                         Buka di Google Maps
                     </a>
@@ -82,7 +80,7 @@ include 'includes/header.php';
             
             <div class="contact-map scroll-animate" style="min-height: 500px;">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.788503674058!2d110.9973105!3d-7.4431884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1ca9bff1cd7f%3A0xcba7f2d09bc4047c!2shasanah!5e0!3m2!1sen!2sid!4v1744000000000!5m2!1sen!2sid" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.5!2d111.0!3d-7.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjQnMDAuMCJTIDExMcKwMDAnMDAuMCJF!5e0!3m2!1sid!2sid!4v1234567890" 
                     allowfullscreen="" 
                     loading="lazy"
                     title="Lokasi Toko Kain Hasanah">
@@ -92,7 +90,6 @@ include 'includes/header.php';
     </div>
 </section>
 
-<!-- Directions Section -->
 <section class="section section-alt">
     <div class="container">
         <div class="section-title scroll-animate">
@@ -100,24 +97,26 @@ include 'includes/header.php';
             <p>Berbagai cara untuk mencapai toko kami dari arah yang berbeda</p>
         </div>
         
-        <div class="features">
-            <div class="feature-card scroll-animate">
-                <div class="feature-icon">
-                    <i class="fas fa-arrow-up"></i>
+        <div class="location-card scroll-animate">
+            <h3><i class="fas fa-route"></i> Dari Pusat Kota Sragen</h3>
+            <div class="directions-list">
+                <div class="direction-step">
+                    <p><strong>Mulai dari SPBU Sine:</strong> Keluar dari area SPBU dan ambil arah Timur menuju Jl. Raya Solo - Ngawi / Jl. Sukowati.</p>
                 </div>
-                <h3>Dari Pusat Kota Sragen</h3>
-                <p>- Mulai dari SPBU Sine: Keluar dari area SPBU dan ambil arah Timur menuju Jl. Raya Solo - Ngawi / Jl. Sukowati.</p>
-                <p></p>- Lurus di Jl. Sukowati (±1 km): Terus ikuti jalan utama ini melewati pusat kota/pertokoan.
-                <p></p>- Belok Kanan ke Jl. Gambiran (±100 m): Setelah menempuh sekitar 1 km, cari persimpangan menuju Jl. Gambiran dan belok kanan.      
-                <p>- Ikuti Jl. Gambiran (±700 m): Tetap di jalan ini hingga Anda sampai di lokasi hasanah yang berada di sebelah kiri atau kanan jalan sesuai titik koordinatnya.</p>
+                <div class="direction-step">
+                    <p><strong>Lurus di Jl. Sukowati (±1 km):</strong> Terus ikuti jalan utama ini melewati pusat kota/pertokoan.</p>
+                </div>
+                <div class="direction-step">
+                    <p><strong>Belok Kanan ke Jl. Gambiran (±100 m):</strong> Setelah menempuh sekitar 1 km, cari persimpangan menuju Jl. Gambiran dan belok kanan.</p>
+                </div>
+                <div class="direction-step">
+                    <p><strong>Ikuti Jl. Gambiran (±700 m):</strong> Tetap di jalan ini hingga Anda sampai di lokasi Hasanah.</p>
+                </div>
             </div>
-            
-
         </div>
     </div>
 </section>
 
-<!-- Landmarks Section -->
 <section class="section">
     <div class="container">
         <div class="section-title scroll-animate">
@@ -125,27 +124,30 @@ include 'includes/header.php';
             <p>Temukan toko kami dengan mudah menggunakan patokan-patokan berikut</p>
         </div>
         
-        <div class="features" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-            <div class="feature-card scroll-animate" style="text-align: left;">
-                <div class="feature-icon" style="margin: 0 0 1rem 0;">
-                    <i class="fas fa-store-alt"></i>
+        <div class="landmark-grid">
+            <div class="landmark-card scroll-animate">
+                <div class="landmark-icon">
+                    <i class="fas fa-school"></i>
                 </div>
-                 <h3>Dekat SMP 2 Karangmalang</h3>
-                <p style="margin-bottom: 0;">Toko kami berada di samping SMPN 2 Karangmalang</p>
+                <div class="landmark-content">
+                    <h4>Dekat SMP 2 Karangmalang</h4>
+                    <p>Toko kami berada di samping SMPN 2 Karangmalang</p>
+                </div>
             </div>
             
-            <div class="feature-card scroll-animate" style="text-align: left;">
-                <div class="feature-icon" style="margin: 0 0 1rem 0;">
+            <div class="landmark-card scroll-animate">
+                <div class="landmark-icon">
                     <i class="fas fa-mosque"></i>
                 </div>
-                <h3>Dekat SD/SMP/SMA Al-Azhar Sragen</h3>
-                <p style="margin-bottom: 0">Hanya 800M dari Al-Azhar Sragen</p>
+                <div class="landmark-content">
+                    <h4>Dekat Al-Azhar Sragen</h4>
+                    <p>Hanya berjarak sekitar 800M dari kompleks SD/SMP/SMA Al-Azhar Sragen</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Operating Hours Section -->
 <section class="section section-alt">
     <div class="container">
         <div class="section-title scroll-animate">
@@ -153,68 +155,21 @@ include 'includes/header.php';
             <p>Kami buka setiap hari untuk melayani kebutuhan menjahit Anda</p>
         </div>
         
-        <div class="features" style="max-width: 600px; margin: 0 auto;">
-            <div class="feature-card scroll-animate" style="text-align: left;">
-                <div class="feature-icon" style="margin: 0 0 1rem 0;">
-                    <i class="fas fa-calendar-check"></i>
+        <div class="hours-card scroll-animate">
+            <h3><i class="fas fa-calendar-check"></i> Jadwal Buka</h3>
+            <div class="hours-table">
+                <?php 
+                $days = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
+                foreach($days as $day): ?>
+                <div class="hours-row">
+                    <span class="day"><?php echo $day; ?></span>
+                    <span class="time">07:30 - 15:30</span>
                 </div>
-                <h3>Jadwal Buka</h3>
-                <div class="hours-list" style="margin-top: 1.5rem;">
-                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
-                        <span>Senin</span>
-                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
-                    </div>
-                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
-                        <span>Selasa</span>
-                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
-                    </div>
-                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
-                        <span>Rabu</span>
-                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
-                    </div>
-                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
-                        <span>Kamis</span>
-                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
-                    </div>
-                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
-                        <span>Jumat</span>
-                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
-                    </div>
-                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--color-beige);">
-                        <span>Sabtu</span>
-                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
-                    </div>
-                    <div class="hours-item" style="display: flex; justify-content: space-between; padding: 0.75rem 0;">
-                        <span>Minggu</span>
-                        <span style="color: var(--color-primary-dark); font-weight: 500;">Buka Pukul 7:30 - 15:30</span>
-                    </div>
-                </div>
-                <p style="margin-top: 1.5rem; margin-bottom: 0; font-size: 0.875rem; color: var(--color-text-light);">
-                    <i class="fas fa-info-circle" style="margin-right: 0.5rem;"></i>
-                    Jam buka dapat berubah pada hari libur nasional
-                </p>
+                <?php endforeach; ?>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="container">
-        <div class="cta-container">
-            <div class="cta-content">
-                <h2>Siap Berkunjung?</h2>
-                <p>Kami tunggu kedatangan Anda di toko kami. Hubungi kami jika Anda membutuhkan bantuan untuk menemukan lokasi kami.</p>
-            </div>
-            <div class="cta-buttons">
-                <a href="https://wa.me/6281218248892?text=Halo%20Toko%20Hasanah,%20saya%20ingin%20bertanya%20tentang%20lokasi%20toko" target="_blank" class="btn btn-whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    Tanya Lokasi
-                </a>
-                <a href="tel:081218248892" class="btn btn-outline">
-                    <i class="fas fa-phone"></i>
-                    Telepon Kami
-                </a>
+            <div class="hours-note">
+                <i class="fas fa-info-circle"></i>
+                Jam buka dapat berubah pada hari libur nasional
             </div>
         </div>
     </div>

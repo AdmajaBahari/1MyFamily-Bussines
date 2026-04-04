@@ -1,43 +1,20 @@
 <?php
-$pageTitle = 'Kontak';
-$activePage = 'contact';
+$pageTitle = 'Hubungi Kami - TOKO HASANAH';
+$activePage = 'kontak';
 include 'includes/header.php';
-
-// Process form submission
-$messageSent = false;
-$formError = '';
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nama = isset($_POST['nama']) ? htmlspecialchars(trim($_POST['nama'])) : '';
-    $email = isset($_POST['email']) ? htmlspecialchars(trim($_POST['email'])) : '';
-    $telepon = isset($_POST['telepon']) ? htmlspecialchars(trim($_POST['telepon'])) : '';
-    $pesan = isset($_POST['pesan']) ? htmlspecialchars(trim($_POST['pesan'])) : '';
-    
-    if (empty($nama) || empty($email) || empty($pesan)) {
-        $formError = 'Mohon lengkapi semua field yang wajib diisi.';
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $formError = 'Format email tidak valid.';
-    } else {
-        // In a real scenario, you would send email here
-        // For now, we'll just show success message
-        $messageSent = true;
-    }
-}
 ?>
 
-<!-- Page Header -->
-<section class="hero" style="min-height: 50vh; padding: 120px 0 60px;">
+<section class="hero page-header">
     <div class="container">
-        <div class="section-title scroll-animate" style="margin-bottom: 0;">
-            <h2 style="margin-bottom: 1rem;">Hubungi Kami</h2>
-            <p style="max-width: 700px; margin: 0 auto;">
+        <div class="page-header-content scroll-animate">
+            <h2>Hubungi Kami</h2>
+            <p>
                 Ada pertanyaan atau butuh bantuan? Jangan ragu untuk menghubungi kami melalui berbagai cara berikut.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Contact Section -->
 <section class="section">
     <div class="container">
         <div class="contact-container">
@@ -80,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div class="contact-text">
                             <h4>Alamat Toko</h4>
-                            <p>Guworejo, Karangmalang, Sragen Regency, Central Java, Indonesia</p>
+                            <p>Turi Lor, Sine, Karangmalang, Sragen Regency, Central Java, Indonesia</p>
                             <a href="lokasi.php" class="btn btn-outline" style="margin-top: 0.5rem; padding: 0.5rem 1rem; font-size: 0.875rem;">
                                 <i class="fas fa-map-marked-alt"></i> Lihat Peta
                             </a>
@@ -93,12 +70,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div class="contact-text">
                             <h4>Jam Operasional</h4>
-                            <p>Buka Setiap Hari<br>Tutup Pukul 03:30 AM</p>
+                            <p>Buka Setiap Hari<br>07:30 - 15:30</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Social Media -->
                 <div style="margin-top: 2rem;">
                     <h4 style="margin-bottom: 1rem;">Ikuti Kami</h4>
                     <div class="footer-social">
@@ -115,61 +91,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
             
-            <!-- Contact Form -->
-            <div class="scroll-animate" style="background: var(--color-white); padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+            <div class="contact-form-container scroll-animate">
                 <h3 style="margin-bottom: 1.5rem;">Kirim Pesan</h3>
                 
-                <?php if ($messageSent): ?>
-                    <div style="background: #d4edda; color: #155724; padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
-                        <i class="fas fa-check-circle" style="margin-right: 0.5rem;"></i>
-                        Terima kasih! Pesan Anda telah terkirim. Kami akan segera menghubungi Anda.
-                    </div>
-                <?php endif; ?>
-                
-                <?php if ($formError): ?>
-                    <div style="background: #f8d7da; color: #721c24; padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
-                        <i class="fas fa-exclamation-circle" style="margin-right: 0.5rem;"></i>
-                        <?php echo $formError; ?>
-                    </div>
-                <?php endif; ?>
-                
-                <form method="POST" action="">
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="nama" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Nama Lengkap <span style="color: #dc3545;">*</span></label>
+                <form method="POST" action="" id="contactForm">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap <span class="required">*</span></label>
                         <input type="text" id="nama" name="nama" required 
-                            style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--color-beige); border-radius: var(--radius-md); font-size: 1rem; transition: var(--transition-normal);"
+                            class="form-control"
                             placeholder="Masukkan nama Anda">
                     </div>
                     
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email <span style="color: #dc3545;">*</span></label>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
                         <input type="email" id="email" name="email" required 
-                            style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--color-beige); border-radius: var(--radius-md); font-size: 1rem; transition: var(--transition-normal);"
+                            class="form-control"
                             placeholder="Masukkan email Anda">
                     </div>
                     
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="telepon" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Nomor Telepon</label>
+                    <div class="form-group">
+                        <label for="telepon">Nomor Telepon</label>
                         <input type="tel" id="telepon" name="telepon" 
-                            style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--color-beige); border-radius: var(--radius-md); font-size: 1rem; transition: var(--transition-normal);"
+                            class="form-control"
                             placeholder="Masukkan nomor telepon (opsional)">
                     </div>
                     
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="pesan" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Pesan <span style="color: #dc3545;">*</span></label>
+                    <div class="form-group">
+                        <label for="pesan">Pesan <span class="required">*</span></label>
                         <textarea id="pesan" name="pesan" rows="5" required 
-                            style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--color-beige); border-radius: var(--radius-md); font-size: 1rem; transition: var(--transition-normal); resize: vertical;"
+                            class="form-control"
                             placeholder="Tulis pesan Anda di sini..."></textarea>
                     </div>
                     
                     <button type="submit" class="btn btn-primary" style="width: 100%;">
-                        <i class="fas fa-paper-plane"></i>
-                        Kirim Pesan
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
                     </button>
                 </form>
                 
-                <p style="margin-top: 1.5rem; margin-bottom: 0; font-size: 0.875rem; color: var(--color-text-light); text-align: center;">
-                    <i class="fas fa-lock" style="margin-right: 0.5rem;"></i>
+                <p class="form-note">
+                    <i class="fas fa-lock"></i>
                     Atau hubungi kami langsung via WhatsApp untuk respon lebih cepat
                 </p>
             </div>
@@ -177,7 +137,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </section>
 
-<!-- FAQ Section -->
 <section class="section section-alt">
     <div class="container">
         <div class="section-title scroll-animate">
@@ -185,122 +144,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p>Jawaban untuk pertanyaan yang sering ditanyakan oleh pelanggan kami</p>
         </div>
         
-        <div class="features" style="grid-template-columns: 1fr;">
-            <div class="feature-card scroll-animate" style="text-align: left;">
-                <h3 style="display: flex; align-items: center; gap: 0.75rem;">
-                    <i class="fas fa-question-circle" style="color: var(--color-primary);"></i>
-                    Apakah bisa memesan kain dalam jumlah besar?
-                </h3>
-                <p style="margin-bottom: 0;">
-                    Tentu! Kami melayani pembelian eceran maupun grosir. Untuk pembelian dalam jumlah besar, kami bisa memberikan harga khusus. Silakan hubungi kami untuk nego harga.
-                </p>
+        <div class="faq-grid">
+            <div class="faq-card scroll-animate">
+                <h3><i class="fas fa-question-circle"></i> Apakah bisa memesan kain dalam jumlah besar?</h3>
+                <p>Tentu! Kami melayani pembelian eceran maupun grosir. Untuk pembelian dalam jumlah besar, kami bisa memberikan harga khusus.</p>
             </div>
             
-            <div class="feature-card scroll-animate" style="text-align: left;">
-                <h3 style="display: flex; align-items: center; gap: 0.75rem;">
-                    <i class="fas fa-question-circle" style="color: var(--color-primary);"></i>
-                    Apakah ada layanan pengiriman?
-                </h3>
-                <p style="margin-bottom: 0;">
-                    Ya, kami menyediakan layanan pengiriman untuk area Sragen dan sekitarnya. Untuk pengiriman ke luar kota, kami bisa menggunakan jasa ekspedisi yang Anda pilih.
-                </p>
+            <div class="faq-card scroll-animate">
+                <h3><i class="fas fa-question-circle"></i> Apakah ada layanan pengiriman?</h3>
+                <p>Ya, kami menyediakan layanan pengiriman untuk area Sragen dan sekitarnya. Untuk luar kota, bisa menggunakan jasa ekspedisi pilihan Anda.</p>
             </div>
             
-            <div class="feature-card scroll-animate" style="text-align: left;">
-                <h3 style="display: flex; align-items: center; gap: 0.75rem;">
-                    <i class="fas fa-question-circle" style="color: var(--color-primary);"></i>
-                    Apakah mesin jahit ada garansi?
-                </h3>
-                <p style="margin-bottom: 0;">
-                    Semua mesin jahit yang kami jual dilengkapi dengan garansi resmi dari pabrik. Garansi berlaku untuk kerusakan mekanis dan elektrikal sesuai ketentuan masing-masing merek.
-                </p>
-            </div>
-            
-            <div class="feature-card scroll-animate" style="text-align: left;">
-                <h3 style="display: flex; align-items: center; gap: 0.75rem;">
-                    <i class="fas fa-question-circle" style="color: var(--color-primary);"></i>
-                    Bisa konsultasi memilih kain yang sesuai?
-                </h3>
-                <p style="margin-bottom: 0;">
-                    Tentu saja! Tim kami siap membantu Anda memilih kain yang sesuai dengan kebutuhan proyek Anda. Baik untuk pakaian, dekorasi, atau kerajinan tangan.
-                </p>
-            </div>
-            
-            <div class="feature-card scroll-animate" style="text-align: left;">
-                <h3 style="display: flex; align-items: center; gap: 0.75rem;">
-                    <i class="fas fa-question-circle" style="color: var(--color-primary);"></i>
-                    Apakah menerima pembelian online?
-                </h3>
-                <p style="margin-bottom: 0;">
-                    Ya, kami menerima pembelian via WhatsApp atau telepon. Anda bisa melihat katalog produk kami dan kami akan membantu proses pemesanan serta pengiriman.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Quick Contact Methods -->
-<section class="section">
-    <div class="container">
-        <div class="section-title scroll-animate">
-            <h2>Cara Cepat Menghubungi Kami</h2>
-            <p>Pilih cara yang paling nyaman untuk Anda</p>
-        </div>
-        
-        <div class="features">
-            <div class="feature-card scroll-animate">
-                <div class="feature-icon" style="background: linear-gradient(135deg, #25D366, #128C7E);">
-                    <i class="fab fa-whatsapp" style="color: white;"></i>
-                </div>
-                <h3>WhatsApp</h3>
-                <p>Respon tercepat untuk pertanyaan dan pemesanan</p>
-                <a href="https://wa.me/6281218248892?text=Halo%20Toko%20Hasanah" target="_blank" class="btn btn-whatsapp" style="margin-top: 1rem;">
-                    Chat WhatsApp
-                </a>
-            </div>
-            
-            <div class="feature-card scroll-animate">
-                <div class="feature-icon" style="background: var(--color-primary);">
-                    <i class="fas fa-phone" style="color: white;"></i>
-                </div>
-                <h3>Telepon Langsung</h3>
-                <p>Hubungi kami untuk informasi stok dan harga</p>
-                <a href="tel:081218248892" class="btn btn-primary" style="margin-top: 1rem;">
-                    0812-1824-8892
-                </a>
-            </div>
-            
-            <div class="feature-card scroll-animate">
-                <div class="feature-icon" style="background: var(--color-secondary);">
-                    <i class="fas fa-store" style="color: white;"></i>
-                </div>
-                <h3>Kunjungi Toko</h3>
-                <p>Lihat langsung koleksi produk kami</p>
-                <a href="lokasi.php" class="btn btn-secondary" style="margin-top: 1rem;">
-                    Lihat Lokasi
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="container">
-        <div class="cta-container">
-            <div class="cta-content">
-                <h2>Siap Memulai?</h2>
-                <p>Hubungi kami sekarang dan temukan kebutuhan menjahit Anda dengan harga terbaik</p>
-            </div>
-            <div class="cta-buttons">
-                <a href="https://wa.me/6281218248892?text=Halo%20Toko%20Hasanah,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda" target="_blank" class="btn btn-whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    Chat WhatsApp
-                </a>
-                <a href="tel:081218248892" class="btn btn-outline">
-                    <i class="fas fa-phone"></i>
-                    Telepon Kami
-                </a>
+            <div class="faq-card scroll-animate">
+                <h3><i class="fas fa-question-circle"></i> Apakah mesin jahit ada garansi?</h3>
+                <p>Semua mesin jahit yang kami jual dilengkapi dengan garansi resmi dari pabrik sesuai ketentuan masing-masing merek.</p>
             </div>
         </div>
     </div>
