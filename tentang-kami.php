@@ -119,7 +119,7 @@ include 'includes/header.php';
     <div class="container">
         <div class="hero-stats" style="justify-content: center; border: none; padding: 2rem; background: var(--color-bg); border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
             <div class="stat-item scroll-animate">
-                <span class="stat-number">26+</span>
+                <span class="stat-number">20+</span>
                 <span class="stat-label">Tahun Berdiri</span>
             </div>
             <div class="stat-item scroll-animate">
@@ -131,8 +131,8 @@ include 'includes/header.php';
                 <span class="stat-label">Produk Tersedia</span>
             </div>
             <div class="stat-item scroll-animate">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Merk Bermitra</span>
+                <span class="stat-number">7+</span>
+                <span class="stat-label">Experience</span>
             </div>
         </div>
     </div>

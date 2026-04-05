@@ -57,7 +57,7 @@ include 'includes/header.php';
                         </div>
                         <div class="contact-text">
                             <h4>Alamat Toko</h4>
-                            <p>Turi Lor, Sine, Karangmalang, Sragen Regency, Central Java, Indonesia</p>
+                            <p>Turi Lor, Sine, Sragen, Central Java, Indonesia</p>
                             <a href="lokasi.php" class="btn btn-outline" style="margin-top: 0.5rem; padding: 0.5rem 1rem; font-size: 0.875rem;">
                                 <i class="fas fa-map-marked-alt"></i> Lihat Peta
                             </a>

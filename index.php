@@ -202,11 +202,11 @@ include 'includes/header.php';
         <div class="contact-container">
             <div class="contact-info scroll-animate">
                 <h2>Kunjungi Toko Kami</h2>
-                <p>Kami berlokasi di Turi Lor, Guworejo, Karangmalang, Sragen. Datang langsung ke toko kami untuk melihat dan merasakan kualitas produk kami.</p>
+                <p>Kami berlokasi di Turi Lor, Sine, Sragen, Central Java, Indonesia. Datang langsung ke toko kami untuk melihat dan merasakan kualitas produk kami.</p>
                 <div class="contact-details">
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <div class="contact-text"><h4>Alamat</h4><p>Turi Lor, Sine, Karangmalang, Sragen</p></div>
+                        <div class="contact-text"><h4>Alamat</h4><p>Turi Lor, Sine, Sragen, Central Java, Indonesia</p></div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
@@ -214,7 +214,7 @@ include 'includes/header.php';
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
-                        <div class="contact-text"><h4>Jam Operasional</h4><p>Buka Setiap Hari - 07:30 - 15:30</p></div>
+                        <div class="contact-text"><h4>Jam Operasional</h4><p>Buka Setiap Hari - 08:00 - 16:00</p></div>
                     </div>
                 </div>
                 <a href="lokasi.php" class="btn btn-primary mt-4"><i class="fas fa-map-marked-alt"></i> Lihat Peta Lokasi</a>
